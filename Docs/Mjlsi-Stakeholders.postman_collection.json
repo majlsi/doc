@@ -1,0 +1,282 @@
+{
+	"info": {
+		"_postman_id": "f9a600c0-74f3-4a45-b621-798f83913769",
+		"name": "Mjlsi-Stakeholders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20981525"
+	},
+	"item": [
+		{
+			"name": "Add Stackholder",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"saed.hossam+6@enozom.com\",\r\n    \"name\": \"Saed Hossam\",\r\n    \"name_ar\" : \"سعيد حسام\",\r\n    \"user_phone\" : \"01273757448\",\r\n    \"date_of_birth\" : \"1997-09-25\",\r\n    \"identity_number\" : \"1234567800\",\r\n    \"share\" : \"12\",\r\n    \"language_id\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{mjlsi_base}}/stakeholders",
+					"host": [
+						"{{mjlsi_base}}"
+					],
+					"path": [
+						"stakeholders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"eman.mohamed@enozom.com\",\r\n    \"password\" : \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{mjlsi_base}}/authenticate",
+					"host": [
+						"{{mjlsi_base}}"
+					],
+					"path": [
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Stakeholders",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"SearchObject\": {\r\n        \"name\" : \"Saed\",\r\n        \"name_ar\" : \"سعيد\",\r\n        \"identity_number\" :\"1234567890\",\r\n        \"share\" : \"12\",\r\n        \"date_of_birth\" :\"1997-09-25\",\r\n        \"email\" : \"saed.hossam@enozom.com\"\r\n    },\r\n    \"SortBy\" : \"share\",\r\n    \"SortDirection\" : \"asc\",\r\n    \"PageNumber\" : 1,\r\n    \"PageSize\" : 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{mjlsi_base}}/stakeholders/filtered-list",
+					"host": [
+						"{{mjlsi_base}}"
+					],
+					"path": [
+						"stakeholders",
+						"filtered-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Activate deactivate stakeholder",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"is_active\" : true,\r\n    \"stakesholder_id\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{mjlsi_base}}/admin/stakeholders/activation",
+					"host": [
+						"{{mjlsi_base}}"
+					],
+					"path": [
+						"admin",
+						"stakeholders",
+						"activation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete stakeholder",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{mjlsi_base}}/stakeholders/1",
+					"host": [
+						"{{mjlsi_base}}"
+					],
+					"path": [
+						"stakeholders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{mjlsi_base}}/stakeholders/1",
+					"host": [
+						"{{mjlsi_base}}"
+					],
+					"path": [
+						"stakeholders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Stakeholder",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"saed.hossam@enozom.com\",\r\n    \"name\": \"Saed Hossam\",\r\n    \"name_ar\" : \"سعيد حسام\",\r\n    \"user_phone\" : \"01273757448\",\r\n    \"date_of_birth\" : \"1997-09-25\",\r\n    \"identity_number\" : \"99999990\",\r\n    \"share\" : \"12\",\r\n    \"language_id\" : 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{mjlsi_base}}/stakeholders/10",
+					"host": [
+						"{{mjlsi_base}}"
+					],
+					"path": [
+						"stakeholders",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get total shares",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{mjlsi_base}}/stakeholders/total-shares",
+					"host": [
+						"{{mjlsi_base}}"
+					],
+					"path": [
+						"stakeholders",
+						"total-shares"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo2MCwiY2hhdF90b2tlbiI6ImV5SjBlWEFpT2lKS1YxUWlMQ0poYkdjaU9pSklVekkxTmlKOS5leUoxYzJWeVgybGtJam94TENKemRXSWlPakVzSW1semN5STZJbWgwZEhBNkx5OXNiMk5oYkdodmMzUTZPREE0TUM5dGFteHphUzlEYjJSbEwwTm9ZWFF2Y0hWaWJHbGpMMkZ3YVM5Mk1TOWhkWFJvWlc1MGFXTmhkR1VpTENKcFlYUWlPakUyTlRVeU1EQTRNREVzSW1WNGNDSTZNVFk1TVRJd01EZ3dNU3dpYm1KbUlqb3hOalUxTWpBd09EQXhMQ0pxZEdraU9pSTNTRWN3WkVsWlRWRkJRa1JIUVRWcEluMC5uRTVqQ29TQTJHSjZiM245dzl4bXlDRTFoRE1CNlJKYkpyWmRVUFA2NlIwIiwic3ViIjo2MCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL21qbHNpL0NvZGUvQmFja0VuZC9wdWJsaWMvYXBpL3YxL2F1dGhlbnRpY2F0ZSIsImlhdCI6MTY1NTIwMDgwNywiZXhwIjoxNjkxMjAwODA3LCJuYmYiOjE2NTUyMDA4MDcsImp0aSI6IjFiYm5jMGtTTlk5Qk1Oc00ifQ.CPhEfMICIWuvBsuZm1AhhEVnJmhlMl5HZGerDjvr_PE",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "mjlsi_base",
+			"value": "http://localhost:8080/mjlsi/Code/BackEnd/public/api/v1"
+		}
+	]
+}

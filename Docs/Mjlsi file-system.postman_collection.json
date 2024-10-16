@@ -1,0 +1,2425 @@
+{
+	"info": {
+		"_postman_id": "8b877e85-3e0c-4fe9-8542-2ff375f4a046",
+		"name": "Mjlsi file-system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "My Files Page",
+			"item": [
+				{
+					"name": "recent",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNE56UTNOREk1TENKbGVIQWlPakUyTlRRM05EYzBNamtzSW01aVppSTZNVFl4T0RjME56UXlPU3dpYW5ScElqb2llR3B2ZFRSRGJEbGtlRUpVYlZVeVF5SjkuSFA0UEw5LXdkME9LaldIZFVFZ2tSZTRReVUzU0RJQ1gxSndoRzdERWlMNCIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTg3NDc0MjksImV4cCI6MTY1NDc0NzQyOSwibmJmIjoxNjE4NzQ3NDI5LCJqdGkiOiJ0NUhaWkh3ZmV4QnowWHpVIn0.WPLFkOZCmJvi9BknDo8z5DFYUn6clDjrCQP3XnEGsaQ"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:4200"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-site"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:4200/"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en-US;q=0.9,en;q=0.8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"PageNumber\":1,\"PageSize\":4,\"SearchObject\":{}}"
+						},
+						"url": {
+							"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/files/recent",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mjlsi",
+								"Code",
+								"BackEnd",
+								"public",
+								"api",
+								"v1",
+								"files",
+								"recent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "my-directories",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNE56UTNOREk1TENKbGVIQWlPakUyTlRRM05EYzBNamtzSW01aVppSTZNVFl4T0RjME56UXlPU3dpYW5ScElqb2llR3B2ZFRSRGJEbGtlRUpVYlZVeVF5SjkuSFA0UEw5LXdkME9LaldIZFVFZ2tSZTRReVUzU0RJQ1gxSndoRzdERWlMNCIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTg3NDc0MjksImV4cCI6MTY1NDc0NzQyOSwibmJmIjoxNjE4NzQ3NDI5LCJqdGkiOiJ0NUhaWkh3ZmV4QnowWHpVIn0.WPLFkOZCmJvi9BknDo8z5DFYUn6clDjrCQP3XnEGsaQ"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:4200"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-site"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:4200/"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en-US;q=0.9,en;q=0.8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"PageNumber\": 1,\r\n    \"PageSize\": 100,\r\n    \"SearchObject\": {},\r\n    \"SortBy\": \"updated_at\",\r\n    \"SortDirection\": \"DESC\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/directories/my-directories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mjlsi",
+								"Code",
+								"BackEnd",
+								"public",
+								"api",
+								"v1",
+								"directories",
+								"my-directories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "my-files",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNE56UTNOREk1TENKbGVIQWlPakUyTlRRM05EYzBNamtzSW01aVppSTZNVFl4T0RjME56UXlPU3dpYW5ScElqb2llR3B2ZFRSRGJEbGtlRUpVYlZVeVF5SjkuSFA0UEw5LXdkME9LaldIZFVFZ2tSZTRReVUzU0RJQ1gxSndoRzdERWlMNCIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTg3NDc0MjksImV4cCI6MTY1NDc0NzQyOSwibmJmIjoxNjE4NzQ3NDI5LCJqdGkiOiJ0NUhaWkh3ZmV4QnowWHpVIn0.WPLFkOZCmJvi9BknDo8z5DFYUn6clDjrCQP3XnEGsaQ"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:4200"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-site"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:4200/"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en-US;q=0.9,en;q=0.8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"PageNumber\": 1,\r\n    \"PageSize\": 24,\r\n    \"SearchObject\": {},\r\n    \"SortBy\": \"updated_at\",\r\n    \"SortDirection\": \"DESC\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/files/my-files",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mjlsi",
+								"Code",
+								"BackEnd",
+								"public",
+								"api",
+								"v1",
+								"files",
+								"my-files"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "shared",
+			"item": [
+				{
+					"name": "directories",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNE56UTNOREk1TENKbGVIQWlPakUyTlRRM05EYzBNamtzSW01aVppSTZNVFl4T0RjME56UXlPU3dpYW5ScElqb2llR3B2ZFRSRGJEbGtlRUpVYlZVeVF5SjkuSFA0UEw5LXdkME9LaldIZFVFZ2tSZTRReVUzU0RJQ1gxSndoRzdERWlMNCIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTg3NDc0MjksImV4cCI6MTY1NDc0NzQyOSwibmJmIjoxNjE4NzQ3NDI5LCJqdGkiOiJ0NUhaWkh3ZmV4QnowWHpVIn0.WPLFkOZCmJvi9BknDo8z5DFYUn6clDjrCQP3XnEGsaQ"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:4200"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-site"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:4200/"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en-US;q=0.9,en;q=0.8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"PageNumber\": 1,\r\n    \"PageSize\": 100,\r\n    \"SearchObject\": {},\r\n    \"SortBy\": \"updated_at\",\r\n    \"SortDirection\": \"DESC\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/directories/shared",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mjlsi",
+								"Code",
+								"BackEnd",
+								"public",
+								"api",
+								"v1",
+								"directories",
+								"shared"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "recent shared",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNE56UTNOREk1TENKbGVIQWlPakUyTlRRM05EYzBNamtzSW01aVppSTZNVFl4T0RjME56UXlPU3dpYW5ScElqb2llR3B2ZFRSRGJEbGtlRUpVYlZVeVF5SjkuSFA0UEw5LXdkME9LaldIZFVFZ2tSZTRReVUzU0RJQ1gxSndoRzdERWlMNCIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTg3NDc0MjksImV4cCI6MTY1NDc0NzQyOSwibmJmIjoxNjE4NzQ3NDI5LCJqdGkiOiJ0NUhaWkh3ZmV4QnowWHpVIn0.WPLFkOZCmJvi9BknDo8z5DFYUn6clDjrCQP3XnEGsaQ"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:4200"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-site"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:4200/"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en-US;q=0.9,en;q=0.8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"PageNumber\":1,\"PageSize\":4,\"SearchObject\":{}}"
+						},
+						"url": {
+							"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/files/new-shared",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mjlsi",
+								"Code",
+								"BackEnd",
+								"public",
+								"api",
+								"v1",
+								"files",
+								"new-shared"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "files",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNE56UTNOREk1TENKbGVIQWlPakUyTlRRM05EYzBNamtzSW01aVppSTZNVFl4T0RjME56UXlPU3dpYW5ScElqb2llR3B2ZFRSRGJEbGtlRUpVYlZVeVF5SjkuSFA0UEw5LXdkME9LaldIZFVFZ2tSZTRReVUzU0RJQ1gxSndoRzdERWlMNCIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTg3NDc0MjksImV4cCI6MTY1NDc0NzQyOSwibmJmIjoxNjE4NzQ3NDI5LCJqdGkiOiJ0NUhaWkh3ZmV4QnowWHpVIn0.WPLFkOZCmJvi9BknDo8z5DFYUn6clDjrCQP3XnEGsaQ"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:4200"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-site"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:4200/"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en-US;q=0.9,en;q=0.8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"PageNumber\": 1,\r\n    \"PageSize\": 24,\r\n    \"SearchObject\": {},\r\n    \"SortBy\": \"updated_at\",\r\n    \"SortDirection\": \"DESC\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/files/shared",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mjlsi",
+								"Code",
+								"BackEnd",
+								"public",
+								"api",
+								"v1",
+								"files",
+								"shared"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove access dirctory",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Length",
+								"value": "0"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNE56UTNOREk1TENKbGVIQWlPakUyTlRRM05EYzBNamtzSW01aVppSTZNVFl4T0RjME56UXlPU3dpYW5ScElqb2llR3B2ZFRSRGJEbGtlRUpVYlZVeVF5SjkuSFA0UEw5LXdkME9LaldIZFVFZ2tSZTRReVUzU0RJQ1gxSndoRzdERWlMNCIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTg3NDc0MjksImV4cCI6MTY1NDc0NzQyOSwibmJmIjoxNjE4NzQ3NDI5LCJqdGkiOiJ0NUhaWkh3ZmV4QnowWHpVIn0.WPLFkOZCmJvi9BknDo8z5DFYUn6clDjrCQP3XnEGsaQ"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:4200"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-site"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:4200/"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en-US;q=0.9,en;q=0.8"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/directories/removeAccess/156/20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mjlsi",
+								"Code",
+								"BackEnd",
+								"public",
+								"api",
+								"v1",
+								"directories",
+								"removeAccess",
+								"156",
+								"20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "share dirctory",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNE56UTNOREk1TENKbGVIQWlPakUyTlRRM05EYzBNamtzSW01aVppSTZNVFl4T0RjME56UXlPU3dpYW5ScElqb2llR3B2ZFRSRGJEbGtlRUpVYlZVeVF5SjkuSFA0UEw5LXdkME9LaldIZFVFZ2tSZTRReVUzU0RJQ1gxSndoRzdERWlMNCIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTg3NDc0MjksImV4cCI6MTY1NDc0NzQyOSwibmJmIjoxNjE4NzQ3NDI5LCJqdGkiOiJ0NUhaWkh3ZmV4QnowWHpVIn0.WPLFkOZCmJvi9BknDo8z5DFYUn6clDjrCQP3XnEGsaQ"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:4200"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-site"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:4200/"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en-US;q=0.9,en;q=0.8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\"user_id\":3,\"can_read\":true,\"can_edit\":false,\"can_delete\":false}]"
+						},
+						"url": {
+							"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/directories/shareFolder/156",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mjlsi",
+								"Code",
+								"BackEnd",
+								"public",
+								"api",
+								"v1",
+								"directories",
+								"shareFolder",
+								"156"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "share file",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNE56UTNOREk1TENKbGVIQWlPakUyTlRRM05EYzBNamtzSW01aVppSTZNVFl4T0RjME56UXlPU3dpYW5ScElqb2llR3B2ZFRSRGJEbGtlRUpVYlZVeVF5SjkuSFA0UEw5LXdkME9LaldIZFVFZ2tSZTRReVUzU0RJQ1gxSndoRzdERWlMNCIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTg3NDc0MjksImV4cCI6MTY1NDc0NzQyOSwibmJmIjoxNjE4NzQ3NDI5LCJqdGkiOiJ0NUhaWkh3ZmV4QnowWHpVIn0.WPLFkOZCmJvi9BknDo8z5DFYUn6clDjrCQP3XnEGsaQ"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:4200"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-site"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:4200/"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en-US;q=0.9,en;q=0.8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\"user_id\":3,\"can_read\":true,\"can_edit\":false,\"can_delete\":false}]"
+						},
+						"url": {
+							"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/files/shareFile/284",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mjlsi",
+								"Code",
+								"BackEnd",
+								"public",
+								"api",
+								"v1",
+								"files",
+								"shareFile",
+								"284"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove access file",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Length",
+								"value": "0"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNE56UTNOREk1TENKbGVIQWlPakUyTlRRM05EYzBNamtzSW01aVppSTZNVFl4T0RjME56UXlPU3dpYW5ScElqb2llR3B2ZFRSRGJEbGtlRUpVYlZVeVF5SjkuSFA0UEw5LXdkME9LaldIZFVFZ2tSZTRReVUzU0RJQ1gxSndoRzdERWlMNCIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTg3NDc0MjksImV4cCI6MTY1NDc0NzQyOSwibmJmIjoxNjE4NzQ3NDI5LCJqdGkiOiJ0NUhaWkh3ZmV4QnowWHpVIn0.WPLFkOZCmJvi9BknDo8z5DFYUn6clDjrCQP3XnEGsaQ"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:4200"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-site"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:4200/"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en-US;q=0.9,en;q=0.8"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/files/removeAccess/284/32",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mjlsi",
+								"Code",
+								"BackEnd",
+								"public",
+								"api",
+								"v1",
+								"files",
+								"removeAccess",
+								"284",
+								"32"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "recent",
+			"item": [
+				{
+					"name": "recent direcotires",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNE56UTNOREk1TENKbGVIQWlPakUyTlRRM05EYzBNamtzSW01aVppSTZNVFl4T0RjME56UXlPU3dpYW5ScElqb2llR3B2ZFRSRGJEbGtlRUpVYlZVeVF5SjkuSFA0UEw5LXdkME9LaldIZFVFZ2tSZTRReVUzU0RJQ1gxSndoRzdERWlMNCIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTg3NDc0MjksImV4cCI6MTY1NDc0NzQyOSwibmJmIjoxNjE4NzQ3NDI5LCJqdGkiOiJ0NUhaWkh3ZmV4QnowWHpVIn0.WPLFkOZCmJvi9BknDo8z5DFYUn6clDjrCQP3XnEGsaQ"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:4200"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-site"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:4200/"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en-US;q=0.9,en;q=0.8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"PageNumber\":1,\"PageSize\":100,\"SearchObject\":{}}"
+						},
+						"url": {
+							"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/directories/recent",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mjlsi",
+								"Code",
+								"BackEnd",
+								"public",
+								"api",
+								"v1",
+								"directories",
+								"recent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "recent files",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNE56UTNOREk1TENKbGVIQWlPakUyTlRRM05EYzBNamtzSW01aVppSTZNVFl4T0RjME56UXlPU3dpYW5ScElqb2llR3B2ZFRSRGJEbGtlRUpVYlZVeVF5SjkuSFA0UEw5LXdkME9LaldIZFVFZ2tSZTRReVUzU0RJQ1gxSndoRzdERWlMNCIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTg3NDc0MjksImV4cCI6MTY1NDc0NzQyOSwibmJmIjoxNjE4NzQ3NDI5LCJqdGkiOiJ0NUhaWkh3ZmV4QnowWHpVIn0.WPLFkOZCmJvi9BknDo8z5DFYUn6clDjrCQP3XnEGsaQ"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:4200"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-site"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:4200/"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en-US;q=0.9,en;q=0.8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"PageNumber\":2,\"PageSize\":24,\"SearchObject\":{}}"
+						},
+						"url": {
+							"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/files/recent",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mjlsi",
+								"Code",
+								"BackEnd",
+								"public",
+								"api",
+								"v1",
+								"files",
+								"recent"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "directory",
+			"item": [
+				{
+					"name": "details",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNU5qRXpNak01TENKbGVIQWlPakUyTlRVMk1UTXlNemtzSW01aVppSTZNVFl4T1RZeE16SXpPU3dpYW5ScElqb2lZbmxYV0RKQ1ZERkhabU5GTXpVMFpDSjkua0VfUzVZZjJETFRkNHlnaktWSzRROWViRGpTaHktNi1rMGRsbkZBVXoycyIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTk2MTMyNDAsImV4cCI6MTY1NTYxMzI0MCwibmJmIjoxNjE5NjEzMjQwLCJqdGkiOiJDWkdIUk1MTkVSY1hpMWFDIn0.3P443PBUw4OXeyXpk9NE0uUcjjBL2Hb0HnKU-VzTnAU"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:4200"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-site"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:4200/"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en-US;q=0.9,en;q=0.8"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/directories/details/159",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mjlsi",
+								"Code",
+								"BackEnd",
+								"public",
+								"api",
+								"v1",
+								"directories",
+								"details",
+								"159"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "directory files",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNU5qRXpNak01TENKbGVIQWlPakUyTlRVMk1UTXlNemtzSW01aVppSTZNVFl4T1RZeE16SXpPU3dpYW5ScElqb2lZbmxYV0RKQ1ZERkhabU5GTXpVMFpDSjkua0VfUzVZZjJETFRkNHlnaktWSzRROWViRGpTaHktNi1rMGRsbkZBVXoycyIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTk2MTMyNDAsImV4cCI6MTY1NTYxMzI0MCwibmJmIjoxNjE5NjEzMjQwLCJqdGkiOiJDWkdIUk1MTkVSY1hpMWFDIn0.3P443PBUw4OXeyXpk9NE0uUcjjBL2Hb0HnKU-VzTnAU"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:4200"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-site"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:4200/"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en-US;q=0.9,en;q=0.8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"PageNumber\": 1,\r\n    \"PageSize\": 100,\r\n    \"SearchObject\": {},\r\n    \"SortBy\": \"name\",\r\n    \"SortDirection\": \"DESC\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/directories/details/159/files",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mjlsi",
+								"Code",
+								"BackEnd",
+								"public",
+								"api",
+								"v1",
+								"directories",
+								"details",
+								"159",
+								"files"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "directory child directories",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNU5qRXpNak01TENKbGVIQWlPakUyTlRVMk1UTXlNemtzSW01aVppSTZNVFl4T1RZeE16SXpPU3dpYW5ScElqb2lZbmxYV0RKQ1ZERkhabU5GTXpVMFpDSjkua0VfUzVZZjJETFRkNHlnaktWSzRROWViRGpTaHktNi1rMGRsbkZBVXoycyIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTk2MTMyNDAsImV4cCI6MTY1NTYxMzI0MCwibmJmIjoxNjE5NjEzMjQwLCJqdGkiOiJDWkdIUk1MTkVSY1hpMWFDIn0.3P443PBUw4OXeyXpk9NE0uUcjjBL2Hb0HnKU-VzTnAU"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:4200"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-site"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:4200/"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en-US;q=0.9,en;q=0.8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"PageNumber\": 1,\r\n    \"PageSize\": 24,\r\n    \"SearchObject\": {},\r\n    \"SortBy\": \"name\",\r\n    \"SortDirection\": \"DESC\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/directories/details/159/directories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mjlsi",
+								"Code",
+								"BackEnd",
+								"public",
+								"api",
+								"v1",
+								"directories",
+								"details",
+								"159",
+								"directories"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "create root directory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNE56UTNOREk1TENKbGVIQWlPakUyTlRRM05EYzBNamtzSW01aVppSTZNVFl4T0RjME56UXlPU3dpYW5ScElqb2llR3B2ZFRSRGJEbGtlRUpVYlZVeVF5SjkuSFA0UEw5LXdkME9LaldIZFVFZ2tSZTRReVUzU0RJQ1gxSndoRzdERWlMNCIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTg3NDc0MjksImV4cCI6MTY1NDc0NzQyOSwibmJmIjoxNjE4NzQ3NDI5LCJqdGkiOiJ0NUhaWkh3ZmV4QnowWHpVIn0.WPLFkOZCmJvi9BknDo8z5DFYUn6clDjrCQP3XnEGsaQ"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:4200"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:4200/"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"directory_name\": \"test\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/directories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mjlsi",
+						"Code",
+						"BackEnd",
+						"public",
+						"api",
+						"v1",
+						"directories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add child files",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNE56UTNOREk1TENKbGVIQWlPakUyTlRRM05EYzBNamtzSW01aVppSTZNVFl4T0RjME56UXlPU3dpYW5ScElqb2llR3B2ZFRSRGJEbGtlRUpVYlZVeVF5SjkuSFA0UEw5LXdkME9LaldIZFVFZ2tSZTRReVUzU0RJQ1gxSndoRzdERWlMNCIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTg3NDc0MjksImV4cCI6MTY1NDc0NzQyOSwibmJmIjoxNjE4NzQ3NDI5LCJqdGkiOiJ0NUhaWkh3ZmV4QnowWHpVIn0.WPLFkOZCmJvi9BknDo8z5DFYUn6clDjrCQP3XnEGsaQ"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+					},
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data; boundary=----WebKitFormBoundarylOgdqn3QaAdB2fyJ"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:4200"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:4200/"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/files/add-files/159",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mjlsi",
+						"Code",
+						"BackEnd",
+						"public",
+						"api",
+						"v1",
+						"files",
+						"add-files",
+						"159"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add child directory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNE56UTNOREk1TENKbGVIQWlPakUyTlRRM05EYzBNamtzSW01aVppSTZNVFl4T0RjME56UXlPU3dpYW5ScElqb2llR3B2ZFRSRGJEbGtlRUpVYlZVeVF5SjkuSFA0UEw5LXdkME9LaldIZFVFZ2tSZTRReVUzU0RJQ1gxSndoRzdERWlMNCIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTg3NDc0MjksImV4cCI6MTY1NDc0NzQyOSwibmJmIjoxNjE4NzQ3NDI5LCJqdGkiOiJ0NUhaWkh3ZmV4QnowWHpVIn0.WPLFkOZCmJvi9BknDo8z5DFYUn6clDjrCQP3XnEGsaQ"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:4200"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:4200/"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"directory_name\":\"123\"}"
+				},
+				"url": {
+					"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/directories/159",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mjlsi",
+						"Code",
+						"BackEnd",
+						"public",
+						"api",
+						"v1",
+						"directories",
+						"159"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "download",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNE56UTNOREk1TENKbGVIQWlPakUyTlRRM05EYzBNamtzSW01aVppSTZNVFl4T0RjME56UXlPU3dpYW5ScElqb2llR3B2ZFRSRGJEbGtlRUpVYlZVeVF5SjkuSFA0UEw5LXdkME9LaldIZFVFZ2tSZTRReVUzU0RJQ1gxSndoRzdERWlMNCIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTg3NDc0MjksImV4cCI6MTY1NDc0NzQyOSwibmJmIjoxNjE4NzQ3NDI5LCJqdGkiOiJ0NUhaWkh3ZmV4QnowWHpVIn0.WPLFkOZCmJvi9BknDo8z5DFYUn6clDjrCQP3XnEGsaQ"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:4200"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:4200/"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/files/download/284",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mjlsi",
+						"Code",
+						"BackEnd",
+						"public",
+						"api",
+						"v1",
+						"files",
+						"download",
+						"284"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "quota",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNE56UTNOREk1TENKbGVIQWlPakUyTlRRM05EYzBNamtzSW01aVppSTZNVFl4T0RjME56UXlPU3dpYW5ScElqb2llR3B2ZFRSRGJEbGtlRUpVYlZVeVF5SjkuSFA0UEw5LXdkME9LaldIZFVFZ2tSZTRReVUzU0RJQ1gxSndoRzdERWlMNCIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTg3NDc0MjksImV4cCI6MTY1NDc0NzQyOSwibmJmIjoxNjE4NzQ3NDI5LCJqdGkiOiJ0NUhaWkh3ZmV4QnowWHpVIn0.WPLFkOZCmJvi9BknDo8z5DFYUn6clDjrCQP3XnEGsaQ"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:4200"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:4200/"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/files/quota",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mjlsi",
+						"Code",
+						"BackEnd",
+						"public",
+						"api",
+						"v1",
+						"files",
+						"quota"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete file",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNE56UTNOREk1TENKbGVIQWlPakUyTlRRM05EYzBNamtzSW01aVppSTZNVFl4T0RjME56UXlPU3dpYW5ScElqb2llR3B2ZFRSRGJEbGtlRUpVYlZVeVF5SjkuSFA0UEw5LXdkME9LaldIZFVFZ2tSZTRReVUzU0RJQ1gxSndoRzdERWlMNCIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTg3NDc0MjksImV4cCI6MTY1NDc0NzQyOSwibmJmIjoxNjE4NzQ3NDI5LCJqdGkiOiJ0NUhaWkh3ZmV4QnowWHpVIn0.WPLFkOZCmJvi9BknDo8z5DFYUn6clDjrCQP3XnEGsaQ"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:4200"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:4200/"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/files/198",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mjlsi",
+						"Code",
+						"BackEnd",
+						"public",
+						"api",
+						"v1",
+						"files",
+						"198"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "download directory",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNE56UTNOREk1TENKbGVIQWlPakUyTlRRM05EYzBNamtzSW01aVppSTZNVFl4T0RjME56UXlPU3dpYW5ScElqb2llR3B2ZFRSRGJEbGtlRUpVYlZVeVF5SjkuSFA0UEw5LXdkME9LaldIZFVFZ2tSZTRReVUzU0RJQ1gxSndoRzdERWlMNCIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTg3NDc0MjksImV4cCI6MTY1NDc0NzQyOSwibmJmIjoxNjE4NzQ3NDI5LCJqdGkiOiJ0NUhaWkh3ZmV4QnowWHpVIn0.WPLFkOZCmJvi9BknDo8z5DFYUn6clDjrCQP3XnEGsaQ"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:4200"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:4200/"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/directories/download/148",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mjlsi",
+						"Code",
+						"BackEnd",
+						"public",
+						"api",
+						"v1",
+						"directories",
+						"download",
+						"148"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete directory",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNE56UTNOREk1TENKbGVIQWlPakUyTlRRM05EYzBNamtzSW01aVppSTZNVFl4T0RjME56UXlPU3dpYW5ScElqb2llR3B2ZFRSRGJEbGtlRUpVYlZVeVF5SjkuSFA0UEw5LXdkME9LaldIZFVFZ2tSZTRReVUzU0RJQ1gxSndoRzdERWlMNCIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTg3NDc0MjksImV4cCI6MTY1NDc0NzQyOSwibmJmIjoxNjE4NzQ3NDI5LCJqdGkiOiJ0NUhaWkh3ZmV4QnowWHpVIn0.WPLFkOZCmJvi9BknDo8z5DFYUn6clDjrCQP3XnEGsaQ"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:4200"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:4200/"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/directories/149",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mjlsi",
+						"Code",
+						"BackEnd",
+						"public",
+						"api",
+						"v1",
+						"directories",
+						"149"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-files",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNE56UTNOREk1TENKbGVIQWlPakUyTlRRM05EYzBNamtzSW01aVppSTZNVFl4T0RjME56UXlPU3dpYW5ScElqb2llR3B2ZFRSRGJEbGtlRUpVYlZVeVF5SjkuSFA0UEw5LXdkME9LaldIZFVFZ2tSZTRReVUzU0RJQ1gxSndoRzdERWlMNCIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTg3NDc0MjksImV4cCI6MTY1NDc0NzQyOSwibmJmIjoxNjE4NzQ3NDI5LCJqdGkiOiJ0NUhaWkh3ZmV4QnowWHpVIn0.WPLFkOZCmJvi9BknDo8z5DFYUn6clDjrCQP3XnEGsaQ"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+					},
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data; boundary=----WebKitFormBoundary2bSQALaZTMDUA0PW"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:4200"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:4200/"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files[]",
+							"type": "file",
+							"src": "/C:/Users/Mohamed.Raafat/Desktop/New Text Document (2).txt"
+						},
+						{
+							"key": "files[]",
+							"type": "file",
+							"src": "/C:/Users/Mohamed.Raafat/Desktop/vroomm.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/files/add-files",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mjlsi",
+						"Code",
+						"BackEnd",
+						"public",
+						"api",
+						"v1",
+						"files",
+						"add-files"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rename file",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNE56UTNOREk1TENKbGVIQWlPakUyTlRRM05EYzBNamtzSW01aVppSTZNVFl4T0RjME56UXlPU3dpYW5ScElqb2llR3B2ZFRSRGJEbGtlRUpVYlZVeVF5SjkuSFA0UEw5LXdkME9LaldIZFVFZ2tSZTRReVUzU0RJQ1gxSndoRzdERWlMNCIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTg3NDc0MjksImV4cCI6MTY1NDc0NzQyOSwibmJmIjoxNjE4NzQ3NDI5LCJqdGkiOiJ0NUhaWkh3ZmV4QnowWHpVIn0.WPLFkOZCmJvi9BknDo8z5DFYUn6clDjrCQP3XnEGsaQ"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:4200"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:4200/"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"11aq\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/files/rename/283",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mjlsi",
+						"Code",
+						"BackEnd",
+						"public",
+						"api",
+						"v1",
+						"files",
+						"rename",
+						"283"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rename directory",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNE56UTNOREk1TENKbGVIQWlPakUyTlRRM05EYzBNamtzSW01aVppSTZNVFl4T0RjME56UXlPU3dpYW5ScElqb2llR3B2ZFRSRGJEbGtlRUpVYlZVeVF5SjkuSFA0UEw5LXdkME9LaldIZFVFZ2tSZTRReVUzU0RJQ1gxSndoRzdERWlMNCIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTg3NDc0MjksImV4cCI6MTY1NDc0NzQyOSwibmJmIjoxNjE4NzQ3NDI5LCJqdGkiOiJ0NUhaWkh3ZmV4QnowWHpVIn0.WPLFkOZCmJvi9BknDo8z5DFYUn6clDjrCQP3XnEGsaQ"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:4200"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:4200/"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"1122221\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/directories/rename/159",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mjlsi",
+						"Code",
+						"BackEnd",
+						"public",
+						"api",
+						"v1",
+						"directories",
+						"rename",
+						"159"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search bar request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJjaGF0X3Rva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5WDJsa0lqb3hMQ0p6ZFdJaU9qRXNJbWx6Y3lJNkltaDBkSEE2THk5c2IyTmhiR2h2YzNRdmJXcHNjMmt2UTI5a1pTOURhR0YwTDNCMVlteHBZeTloY0drdmRqRXZZWFYwYUdWdWRHbGpZWFJsSWl3aWFXRjBJam94TmpFNE56UTNOREk1TENKbGVIQWlPakUyTlRRM05EYzBNamtzSW01aVppSTZNVFl4T0RjME56UXlPU3dpYW5ScElqb2llR3B2ZFRSRGJEbGtlRUpVYlZVeVF5SjkuSFA0UEw5LXdkME9LaldIZFVFZ2tSZTRReVUzU0RJQ1gxSndoRzdERWlMNCIsInN1YiI6MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9tamxzaS9Db2RlL0JhY2tFbmQvcHVibGljL2FwaS92MS9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MTg3NDc0MjksImV4cCI6MTY1NDc0NzQyOSwibmJmIjoxNjE4NzQ3NDI5LCJqdGkiOiJ0NUhaWkh3ZmV4QnowWHpVIn0.WPLFkOZCmJvi9BknDo8z5DFYUn6clDjrCQP3XnEGsaQ"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:4200"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:4200/"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"PageNumber\":1,\"PageSize\":10,\"SearchObject\":{\"term\":\"test\"}}"
+				},
+				"url": {
+					"raw": "http://localhost/mjlsi/Code/BackEnd/public/api/v1/files/search-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mjlsi",
+						"Code",
+						"BackEnd",
+						"public",
+						"api",
+						"v1",
+						"files",
+						"search-all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
